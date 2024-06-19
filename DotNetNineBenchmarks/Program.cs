@@ -7,13 +7,13 @@ namespace DotNetNineBenchmarks
     {
         static void Main(string[] args)
         {
-            BenchmarkRunner.Run<RandomArrayBenchmark>();
-            BenchmarkRunner.Run<ByteToHexBenchmark>();
-            BenchmarkRunner.Run<BWTBenchmark>();
-            BenchmarkRunner.Run<BenchmarkGenerateSuffixes>();
-            BenchmarkRunner.Run<BubbleSortBenchmark>();
-            BenchmarkRunner.Run<InsertionSortBenchmark>();
-            BenchmarkRunner.Run<BinarySearchBenchmark>();
+            //BenchmarkRunner.Run<RandomArrayBenchmark>();
+            //BenchmarkRunner.Run<ByteToHexBenchmark>();
+            //BenchmarkRunner.Run<BWTBenchmark>();
+            //BenchmarkRunner.Run<BenchmarkGenerateSuffixes>();
+            //BenchmarkRunner.Run<BubbleSortBenchmark>();
+            //BenchmarkRunner.Run<InsertionSortBenchmark>();
+            //BenchmarkRunner.Run<BinarySearchBenchmark>();
         }
     }
 }
