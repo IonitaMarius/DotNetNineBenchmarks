@@ -14,6 +14,7 @@ namespace DotNetNineBenchmarks
             //BenchmarkRunner.Run<BubbleSortBenchmark>();
             //BenchmarkRunner.Run<InsertionSortBenchmark>();
             //BenchmarkRunner.Run<BinarySearchBenchmark>();
+            BenchmarkRunner.Run<MergeSortBenchmark>();
         }
     }
 }

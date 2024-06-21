@@ -7,21 +7,21 @@ namespace DotNetNineBenchmarks.Benchmarks
     [MemoryDiagnoser]
     [Orderer(SummaryOrderPolicy.FastestToSlowest)]
     [RankColumn]
-    public class InsertionSortBenchmark
+    public class MergeSortBenchmark
     {
-        private string input = string.Empty;
-        private long length = 10000;
+        private int[] data = null;
+        private const int length = 100000; 
 
         [GlobalSetup]
         public void Setup()
         {
-            input = ByteToHex.UnsafeSpanToHexadecimal(RandomArray.GenerateRandomBytes(length));
+            data = RandomArray.GenerateRandomInts(length);
         }
 
         [Benchmark]
-        public void BenchmarkInsertionSort()
+        public void BenchmarkMergeSort()
         {
-            InsertionSort.Sort(GenerateSuffixes.UnsafeWhileFromSpan(input.AsSpan()));
+            MergeSort.Sort(ref data);
         }
     }
 }
