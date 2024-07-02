@@ -1,4 +1,5 @@
 ﻿using BenchmarkDotNet.Running;
+using DotNetNineBenchmarks.Algorithms;
 using DotNetNineBenchmarks.Benchmarks;
 
 namespace DotNetNineBenchmarks
@@ -16,6 +17,7 @@ namespace DotNetNineBenchmarks
             //BenchmarkRunner.Run<BinarySearchBenchmark>();
             //BenchmarkRunner.Run<MergeSortBenchmark>();
             //BenchmarkRunner.Run<ThreeWayMergeSortBenchmark>();
+            BenchmarkRunner.Run<TimSortBenchmark>();
         }
     }
 }
